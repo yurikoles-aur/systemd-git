@@ -50,7 +50,7 @@ pkgbase = systemd-git
 	source = initcpio-install-udev
 	source = arch.conf
 	source = loader.conf
-	source = splash-arch.bmp::https://git.archlinux.org/svntogit/packages.git/plain/trunk/splash-arch.bmp?h=packages/systemd
+	source = splash-arch.bmp::https://raw.githubusercontent.com/archlinux/svntogit-packages/packages/systemd/trunk/splash-arch.bmp
 	source = systemd-user.pam
 	source = systemd-hook
 	source = 20-systemd-sysusers.hook
