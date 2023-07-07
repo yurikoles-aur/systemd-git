@@ -22,6 +22,7 @@ makedepends=('acl' 'cryptsetup' 'docbook-xsl' 'gperf' 'lz4' 'xz' 'pam' 'libelf'
              'meson' 'libseccomp' 'pcre2' 'audit' 'kexec-tools' 'libxkbcommon'
              'bash-completion' 'p11-kit' 'systemd' 'libfido2' 'tpm2-tss' 'rsync'
              'bpf' 'libbpf' 'clang' 'llvm' 'curl' 'gnutls')
+checkdepends=('python-pefile')
 options=('strip')
 source=("$pkgbase-stable::git+https://github.com/systemd/systemd"
         '0001-Use-Arch-Linux-device-access-groups.patch'
