@@ -11,7 +11,7 @@ pkgname=('systemd-git'
          'systemd-sysvcompat-git'
          'systemd-ukify-git')
 pkgdesc='systemd (git version)'
-pkgver=254.r67973.cde8cc946b
+pkgver=256.devel.r71163.8a461c572b
 pkgrel=1
 arch=('x86_64')
 url='https://www.github.com/systemd/systemd'
@@ -70,7 +70,7 @@ sha512sums=('SKIP'
 
 pkgver() {
   cd "$pkgbase-stable"
-  local _major=`grep -m1 version meson.build | cut -d\' -f2`
+  local _major=`sed 's/~/./g' meson.version`
   printf "%s.r%s.%s" "${_major}" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
